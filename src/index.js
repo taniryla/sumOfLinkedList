@@ -2,9 +2,27 @@ Remember the acronym UPS check
 
 Step One (Understand). We have to understand the problem.
 1. What is the unknown?
+
+head of a new linkedList equal to the sum of the integers of the two Linked lists
+is each integer in the new Linked List a unique integer?
+
 2. What are the data inputs?
+
+two non-negative linked lists of potentially unequal length 
+first node reprsents the least significant DOMStringList
+is is sorted in ascending order?
+do we need to filter out negative integers?
+
+value of linked list is always in the range 0 - 9
+
+cannot modify either of the data input linked lists 
 3. Can you restate the problem in your own words?
+
+
 4. Can the unknown be determined from the data inputs?
+
+
+
 5. Is the data inputs sufficient to determine the unknown? Insufficient? Redundant? Contradictory? 
 6. How should I label important pieces of data input that are a part of the problem?
 7. Draw a figure. Introduce suitable notation.
@@ -31,3 +49,8 @@ IV. 	Step Four (Check). Examine the solution obtained and refactor.
 20.  Can you improve the performance? 
 21.   How have other people solved this problem?
 
+
+function sumOfLinkedList (){
+  // if list1.length !== list2.length, return false
+
+}
