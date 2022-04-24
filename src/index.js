@@ -4,27 +4,36 @@ Step One (Understand). We have to understand the problem.
 1. What is the unknown?
 
 head of a new linkedList equal to the sum of the integers of the two Linked lists
-is each integer in the new Linked List a unique integer?
+is each integer in the new Linked List a unique integer? no
 
 2. What are the data inputs?
 
 two non-negative linked lists of potentially unequal length 
-first node reprsents the least significant DOMStringList
-is is sorted in ascending order?
+first node reprsents the least linked List
+is is sorted in ascending order? 
 do we need to filter out negative integers?
 
 value of linked list is always in the range 0 - 9
 
 cannot modify either of the data input linked lists 
 3. Can you restate the problem in your own words?
-
+traverse to null and make the linkedListOne.value the first digit of the 
+variable firstNumber and add to when you traverse to null in linkedListTwo.value 
+and make secondNumber
+add firstNumber + secondNumber
 
 4. Can the unknown be determined from the data inputs?
-
+yes
 
 
 5. Is the data inputs sufficient to determine the unknown? Insufficient? Redundant? Contradictory? 
-6. How should I label important pieces of data input that are a part of the problem?
+
+sufficient
+6. 
+How should I label important pieces of data input that are a part of the problem?
+
+list1, list2
+
 7. Draw a figure. Introduce suitable notation.
 
 Step Two (Plan). Come up with concrete examples to help you understand the problem better. Find a connection between the data inputs and the unknown. You may be obliged to consider auxiliary problems if an immediate connection cannot be found. 
@@ -52,5 +61,8 @@ IV. 	Step Four (Check). Examine the solution obtained and refactor.
 
 function sumOfLinkedList (){
   // if list1.length !== list2.length, return false
-
+// traverse to null and make the linkedListOne.value the first digit of the 
+// variable firstNumber and add to when you traverse to null in linkedListTwo.value 
+// and make secondNumber
+// add firstNumber + secondNumber
 }
