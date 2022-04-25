@@ -65,6 +65,14 @@ function sumOfLinkedList (linkedListOne, linkedListTwo){
 // traverse to null and make the linkedListOne.value the first digit of the 
 // variable firstNumber and add to when you traverse to null in linkedListTwo.value 
 // and make secondNumber
+  if ((typeOf linkedListOne = number && linkedListOne > 0 && linkedListOne <= 9){
+    while (linkedListOne)
+  }
+  
+  if (typeOf linkedListTwo = number && linkedListTwo > 0 && linkedListTwo <= 9) {
+
+  } 
+
 // convert it to a string and then add firstNumber + secondNumber
 // add it to result
 // split result into char and iterate through each char to add into an array
