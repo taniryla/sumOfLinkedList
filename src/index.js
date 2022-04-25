@@ -75,10 +75,9 @@ function sumOfLinkedList(linkedListOne, linkedListTwo) {
     let currentTwo = head;
     while (currentTwo !== null) {
       newArr.push(linkedListTwo.value);
-      currentOne = currentOne.next;
+      currentTwo = currentTwo.next;
     }
   }
-
   // convert it to a string and then add firstNumber + secondNumber
   // add it to result
   // split result into char and iterate through each char to add into an array
