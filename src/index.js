@@ -32,7 +32,7 @@ sufficient
 6. 
 How should I label important pieces of data input that are a part of the problem?
 
-list1, list2
+linkedListOne, linkedListTwo
 
 7. Draw a figure. Introduce suitable notation.
 
@@ -59,10 +59,13 @@ IV. 	Step Four (Check). Examine the solution obtained and refactor.
 21.   How have other people solved this problem?
 
 
-function sumOfLinkedList (){
-  // if list1.length !== list2.length, return false
+function sumOfLinkedList (linkedListOne, linkedListTwo){
+// result = 0
+  let result = 0;
 // traverse to null and make the linkedListOne.value the first digit of the 
 // variable firstNumber and add to when you traverse to null in linkedListTwo.value 
 // and make secondNumber
-// add firstNumber + secondNumber
+// convert it to a string and then add firstNumber + secondNumber
+// add it to result
+// split result into char and iterate through each char to add into an array
 }
