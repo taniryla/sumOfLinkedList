@@ -61,33 +61,30 @@
 // 19.  Can you make the code DRYer and refactor?
 // 20.  Can you improve the performance?
 // 21.   How have other people solved this problem?
-
-function sumOfLinkedList(linkedListOne, linkedListTwo) {
-  // result = 0
-  let result = 0;
-  let newArr = [];
-  // traverse to null and make the linkedListOne.value the first digit of the
-  // variable firstNumber and add to when you traverse to null in linkedListTwo.value
-  // and make secondNumber
-  if (linkedListOne > 0 && linkedListOne <= 9) {
-    let currentOne = head;
-    while (currentOne !== null) {
-      newArr.push(linkedListOne.value);
-      currentOne = currentOne.next;
-      console.log(newArr);
-    }
+class Node {
+  constructor(val){
+    this.val = val;
+    this.next = next;
   }
-
-  if (linkedListTwo > 0 && linkedListTwo <= 9) {
-    let currentTwo = head;
-    while (currentTwo !== null) {
-      newArr.push(linkedListTwo.value);
-      currentTwo = currentTwo.next;
-    }
-  }
-  // convert it to a string and then add firstNumber + secondNumber
-  // add it to result
-  // split result into char and iterate through each char to add into an array
 }
 
-sumOfLinkedList((2 -> 4 -> 7 -> 1), (9 -> 4 -> 5));
+function sumOfLinkedList(headOne, headTwo) {
+  // 
+  let result = [];
+  // traverse to null and add each stringified headOne.val into a variable str1
+  // traverse to null and add each stringified headTwo.val into a variable str2
+  // create a variable val = int (str1) + int (str2)
+  // convert val into a linked list using a while loop and modular
+  let current = headOne;
+    while (current !== null) {
+      let str1 = headOne.val;
+      console.log(str1);
+      current = current.next;
+    }
+  
+  }
+
+  
+
+
+sumOfLinkedList(1, 4);
