@@ -88,23 +88,22 @@ function sumOfLinkedLists(linkedListOne, linkedListTwo) {
   return linkedListOne;
 }
 
-let a = {
-  head: "2",
-  nodes: [
-    { id: "2", next: "4", value: 2 },
-    { id: "4", next: "7", value: 4 },
-    { id: "7", next: "1", value: 7 },
-    { id: "1", next: null, value: 1 }
-  ]
-};
-
-let b = {
-  head: "9",
-  nodes: [
-    { id: "9", next: "4", value: 9 },
-    { id: "4", next: "5", value: 4 },
-    { id: "5", next: null, value: 5 }
-  ]
-};
-
-sumOfLinkedList(a, b);
+sumOfLinkedList(
+  {
+    head: "2",
+    nodes: [
+      { id: "2", next: "4", value: 2 },
+      { id: "4", next: "7", value: 4 },
+      { id: "7", next: "1", value: 7 },
+      { id: "1", next: null, value: 1 }
+    ]
+  },
+  {
+    head: "9",
+    nodes: [
+      { id: "9", next: "4", value: 9 },
+      { id: "4", next: "5", value: 4 },
+      { id: "5", next: null, value: 5 }
+    ]
+  }
+);
