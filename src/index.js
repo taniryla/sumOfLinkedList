@@ -44,7 +44,6 @@
 // 10. Start with a simple example. Could you restate the problem? Could you restate it still differently?
 // 11. What about examples with empty inputs? Any other edge case examples? What examples with invalid inputs?
 
-
 // 12. Progress to more complex examples. What is your updated plan here to find a solution?
 // 13. If you still cannot solve the proposed problem, try to solve first some related problem. Could you imagine a more accessible related problem? A more general problem? A more special problem? An analogous problem? Could you solve a part of the problem? Keep only a part of the data inputs, drop the other part; how far is the unknown then determined, how can it vary? Could you derive something useful from the data? Could you think of other data appropriate to determine the unknown? Could you change the unknown or the data, or both if necessary, so that the new unknown and the new data are nearer to each other? Did you use all the data? Did you use the whole of the data inputs? Have you taken into account all essential notions involved in the problem?
 
@@ -61,30 +60,30 @@
 // 19.  Can you make the code DRYer and refactor?
 // 20.  Can you improve the performance?
 // 21.   How have other people solved this problem?
+
 class Node {
-  constructor(val){
+  constructor(val) {
     this.val = val;
     this.next = next;
   }
 }
 
 function sumOfLinkedList(headOne, headTwo) {
-  // 
-  let result = [];
+  //
+  if (headOne === null || headTwo === null) {
+    return null;
+  }
+  let pointer1 = headOne;
+  let pointer2 = headTwo;
   // traverse to null and add each stringified headOne.val into a variable str1
   // traverse to null and add each stringified headTwo.val into a variable str2
   // create a variable val = int (str1) + int (str2)
   // convert val into a linked list using a while loop and modular
-  let current = headOne;
-    while (current !== null) {
-      let str1 = headOne.val;
-      console.log(str1);
-      current = current.next;
-    }
-  
+  while (pointer1 !== null) {
+    let str1 = pointer1.val;
+    console.log(str1);
+    pointer1 = pointer1.next;
   }
-
-  
-
+}
 
 sumOfLinkedList(1, 4);
