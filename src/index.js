@@ -75,15 +75,24 @@ function sumOfLinkedLists(linkedListOne, linkedListTwo) {
     return null;
   }
   let pointer1 = linkedListOne;
-  console.log(linkedListOne);
   let pointer2 = linkedListTwo;
-  // traverse to null and add each stringified headOne.val into a variable str1
-  // traverse to null and add each stringified headTwo.val into a variable str2
+  // traverse to null and add each stringified pointer1.value into a variable str1
+  // traverse to null and add each stringified pointer.value into a variable str2
   // create a variable val = int (str1) + int (str2)
   // convert val into a linked list using a while loop and modular
   while (pointer1 !== null) {
     let str1 = pointer1.value;
     pointer1 = pointer1.next;
+  }
+  while (pointer2 !== null) {
+    let str2 = pointer2.value;
+    pointer2 = pointer2.next;
+  }
+  let val = int(str1) + int(str2);
+  if (val > 0) {
+    let x = val % 10;
+    val = val / 10;
+    let node = new LinkedList(x);
   }
   return linkedListOne;
 }
