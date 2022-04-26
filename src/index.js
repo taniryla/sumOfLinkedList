@@ -61,29 +61,50 @@
 // 20.  Can you improve the performance?
 // 21.   How have other people solved this problem?
 
-class Node {
-  constructor(val) {
-    this.val = val;
-    this.next = next;
+class LinkedList {
+  constructor(value) {
+    this.value = value;
+    this.next = null;
   }
 }
 
-function sumOfLinkedList(headOne, headTwo) {
+function sumOfLinkedLists(linkedListOne, linkedListTwo) {
+  // Write your code here.
   //
-  if (headOne === null || headTwo === null) {
+  if (linkedListOne === null || linkedListTwo === null) {
     return null;
   }
-  let pointer1 = headOne;
-  let pointer2 = headTwo;
+  let pointer1 = linkedListOne;
+  console.log(linkedListOne);
+  let pointer2 = linkedListTwo;
   // traverse to null and add each stringified headOne.val into a variable str1
   // traverse to null and add each stringified headTwo.val into a variable str2
   // create a variable val = int (str1) + int (str2)
   // convert val into a linked list using a while loop and modular
   while (pointer1 !== null) {
-    let str1 = pointer1.val;
-    console.log(str1);
+    let str1 = pointer1.value;
     pointer1 = pointer1.next;
   }
+  return linkedListOne;
 }
 
-sumOfLinkedList(1, 4);
+let a = {
+  head: "2",
+  nodes: [
+    { id: "2", next: "4", value: 2 },
+    { id: "4", next: "7", value: 4 },
+    { id: "7", next: "1", value: 7 },
+    { id: "1", next: null, value: 1 }
+  ]
+};
+
+let b = {
+  head: "9",
+  nodes: [
+    { id: "9", next: "4", value: 9 },
+    { id: "4", next: "5", value: 4 },
+    { id: "5", next: null, value: 5 }
+  ]
+};
+
+sumOfLinkedList(a, b);
