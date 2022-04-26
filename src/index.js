@@ -70,31 +70,31 @@ class LinkedList {
 
 function sumOfLinkedLists(linkedListOne, linkedListTwo) {
   // Write your code here.
-  //
-  if (linkedListOne === null || linkedListTwo === null) {
-    return null;
+  // create dummy node
+  let dummy = new LinkedList(0);
+  let current = dummy;
+  let carry = 0;
+
+  let nodeOne = linkedListOne;
+  let nodeTwo = linkedListTwo;
+  // conditional for returning null
+  while (nodeOne !== null || nodeTwo !== null || carry !== 0) {
+    const valueOne = nodeOne !== null ? nodeOne.value : 0;
+    const valueTwo = nodeTwo !== null ? nodeTwo.value : 0;
+    // create a variable sum = int (valueOne) + int (valueTwo) + carry
+    let sum = valueOne + valueTwo + carry;
+    // convert val into a linked list using a while loop and modular
+
+    let newValue = sum % 10;
+    let newNode = new LinkedList(newValue);
+    current.next = newNode;
+    current = newNode;
+
+    carry = Math.floor(sum / 10);
+    nodeOne = nodeOne !== null ? nodeOne.next : null;
+    nodeTwo = nodeTwo !== null ? nodeTwo.next : null;
   }
-  let pointer1 = linkedListOne;
-  let pointer2 = linkedListTwo;
-  // traverse to null and add each stringified pointer1.value into a variable str1
-  // traverse to null and add each stringified pointer.value into a variable str2
-  // create a variable val = int (str1) + int (str2)
-  // convert val into a linked list using a while loop and modular
-  while (pointer1 !== null) {
-    let str1 = pointer1.value;
-    pointer1 = pointer1.next;
-  }
-  while (pointer2 !== null) {
-    let str2 = pointer2.value;
-    pointer2 = pointer2.next;
-  }
-  let val = int(str1) + int(str2);
-  if (val > 0) {
-    let x = val % 10;
-    val = val / 10;
-    let node = new LinkedList(x);
-  }
-  return linkedListOne;
+  return dummy.next;
 }
 
 sumOfLinkedList(
