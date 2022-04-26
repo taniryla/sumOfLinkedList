@@ -54,11 +54,18 @@
 
 // IV. 	Step Four (Check). Examine the solution obtained and refactor.
 // 15.  Can you check your result?
+
+// 2 pointer method (brute force approach)
+
 // 16.  Can you check the argument?
 // 17.  Can you derive the result differently?
+
+// dummy node route
 // 18.  Can you see it at a glance?
 // 19.  Can you make the code DRYer and refactor?
 // 20.  Can you improve the performance?
+
+// yes O(max(m,n))
 // 21.   How have other people solved this problem?
 
 class LinkedList {
